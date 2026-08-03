@@ -1,56 +1,23 @@
-html, body {
-    margin: 0;
-    height: 100%;
+/* Juan Moreno */
+.Heading h1 {
+    font-weight: bolder;
+    font-size: 410%;
    
-  }
-
-
-.header {
-    position: sticky; top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 18px 50px;
-    z-index: 1000;
-    backdrop-filter: blur(1000px);
-    background-color: rgb(0 12 38);
+}
+.Heading h2 {
+    font-size: 100%;
     
 }
 
-.logo {
-    text-decoration: none;
-    color: white;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
+.headingText > * {
+    margin: 0;
+}
+
+.miniHead {
     font-size: 25px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-   
-}
-.header a:hover {
-color:gray
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
 }
 
-
-.backImage {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    /* mask-image: linear-gradient(to bottom, transparent, black 1%); */
-
-}
-
-
-.headingText {
-position: absolute;
-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
-
-}
 
 .Heading {
     position: relative;
@@ -64,44 +31,22 @@ text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
     
 }
 
-.Heading h1 {
-    font-weight: bolder;
-    font-size: 90px;
-   
-}
-.Heading h2 {
-    font-size: 20px;
-    
+
+.headingText {
+position: absolute;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+
 }
 
-.headingText > * {
-    margin: 0;
-}
+.backImage {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* mask-image: linear-gradient(to bottom, transparent, black 1%); */
 
-.navBar {
-    
-    display: flex;
-    gap: 40px;
-     
-  
-    
 }
-.navText {
-    text-decoration: none;
-}
-
-
-
-.navBar a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic Bold', sans-serif;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
-}
-.miniHead {
-    font-size: 25px;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
-}
-/* EXTENSION COLOR #000c17 */
-

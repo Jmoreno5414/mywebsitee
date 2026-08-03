@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    height: 100%;
+   
+  }
+
+
+  
+/* whole nav bar */
+.header {
+    position: sticky; top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    z-index: 1000;
+    backdrop-filter: blur(1000px);
+    background-color: rgb(0 12 38);
+    
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+   
+}
+.header a:hover {
+color:gray
+}
+
+/* mobile hamburger navbar */
+#hamburgerIcon {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
+
+.bar {
+    display: flex;
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+   
+}
+
+
+.mobileMenu {
+    background-color: rgba(75, 74, 74, 0.973);
+    border-radius: 20px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    padding: 15px;
+    top: 20px;
+    right: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.mobileMenu li {
+    margin: 10px 0;
+}
+
+.mobileMenu a {
+    color: white;
+    text-decoration: none;
+}
+.mobileMenu {
+    display: none;
+}
+.mobileMenu.open {
+    display: block;
+}
+
+
+.navBar {
+    display: flex;
+    gap: 40px;
+
+}
+
+@media (max-width:600px) {
+    .navBar {
+        display: none;
+
+    }
+    
+    .header {
+        padding: 30px 50px;
+    }
+    #hamburgerIcon {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    }
+}
+
+.active .bar1 {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.active .bar2 {
+    opacity: 0;
+}
+
+.active .bar3 {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.navText {
+    text-decoration: none;
+}
+
+
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic Bold', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
+}

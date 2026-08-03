@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainNavbar.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="about.css">
     <title>About</title>
 </head>
@@ -10,16 +12,26 @@
     
 
     <header class="header">
-        <a href="home.html" class="logo">Juan M</a>
-        <div class="navBar">
-        
-    
-        <a href="about.html">About </a>
+    <a href="home.html" class="logo">Juan M</a>
+
+    <nav class="navBar">
+        <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
-    
+    </nav>
+
+    <div id="hamburgerIcon" onclick="toggleMenu()">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+
+        <ul class="mobileMenu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
-    </header>
+</header>
 
 
 
