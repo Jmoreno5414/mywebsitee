@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    height: 100%;
+
+
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/my-custom-font.woff2') format('woff2'),
+       url('fonts/my-custom-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.profilePic {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: gray;
+    border-radius: 90px;
+    top: 100px;
+
+
+}
+
+.profileParagraph {
+    position: relative;
+    top: 100px;
+    width: 500px;
+    font-size: 30px;
+   font-family: 'Roboto', sans-serif;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mainProfile {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+@media (max-width:600px) {
+
+    .profileParagraph {
+    position: relative;
+    top: 100px;
+    width: 300px;
+    }
+
+    .profilePic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: gray;
+    border-radius: 70px;
+    top: 100px;
+
+
+}
+
+    
+}
