@@ -5,6 +5,26 @@ html, body {
 
 }
 
+.header {
+    position: sticky; top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255) !important; 
+    
+}
+
+.navBar a {
+    color: black !important;
+}
+
+.logo {
+    color: black !important;
+}
+
 @font-face {
   font-family: 'MyCustomFont';
   src: url('fonts/my-custom-font.woff2') format('woff2'),
@@ -16,28 +36,33 @@ html, body {
 
 .profilePic {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background: gray;
     border-radius: 90px;
     top: 100px;
+    
 
 
 }
 
-.profileParagraph {
+.profileParagraph, .funfactsOne, .funfactstwo   {
     position: relative;
-    top: 100px;
-    width: 500px;
-    font-size: 30px;
+    display: flex;
+    top: 140px;
+    width: 700px;
+    font-size: 25px;
    font-family: 'Roboto', sans-serif;
    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+   text-align: center;
 }
-
+.funfactstwo {
+    padding-bottom: 100px;
+}
 .mainProfile {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media (max-width:600px) {
@@ -46,6 +71,7 @@ html, body {
     position: relative;
     top: 100px;
     width: 300px;
+    font-size: 24px;
     }
 
     .profilePic {
@@ -58,6 +84,22 @@ html, body {
 
 
 }
+  
+}
 
-    
+
+.codeLogos {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    top: 130px;
+    align-items: center;
+    width: 340px;
+    height: 220px;
+}
+
+.recText {
+    position: relative;
+    top: 150px;
+    text-align: center;
 }

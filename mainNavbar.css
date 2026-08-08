@@ -92,7 +92,7 @@ color:gray
     }
     
     .header {
-        padding: 30px 50px;
+        padding: 20px 50px;
     }
     #hamburgerIcon {
     display: flex;
@@ -128,5 +128,5 @@ color:gray
     color: white;
     font-family: 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic Bold', sans-serif;
     font-weight: bold;
-    text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
