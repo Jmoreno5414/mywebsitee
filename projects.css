@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    height: 100%;
+
+
+}
+
+.projectsFrame {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.keysheetsFrame  > * ,.pokemonProject > *, .churchPlaceholder > *, .movieProject > *{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+

@@ -5,26 +5,6 @@ html, body {
 
 }
 
-.header {
-    position: sticky; top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 50px;
-    z-index: 1000;
-    background-color: rgb(255, 255, 255) !important; 
-    
-}
-
-.navBar a {
-    color: black !important;
-}
-
-.logo {
-    color: black !important;
-}
-
 @font-face {
   font-family: 'MyCustomFont';
   src: url('fonts/my-custom-font.woff2') format('woff2'),
@@ -46,12 +26,34 @@ html, body {
 
 }
 
-.profileParagraph, .funfactsOne, .funfactstwo   {
+.innerLogos {
     position: relative;
+    transform: translate(800px, -120px);
+    z-index: 4;
+}
+
+.studioLogo {
+    transform: translate(30px, 150px);
+    z-index: 2;
+    
+}
+.mercyLogo {
+    z-index: 3;
+    transform: translate(-1100px, -20px);
+}
+
+.mercyLogo, .studioLogo {
     display: flex;
-    top: 140px;
-    width: 700px;
-    font-size: 25px;
+    flex-direction: column;
+    position: absolute;
+    height: 120px;
+}
+
+.profileParagraph, .factsPar   {
+   position: relative;
+   top: 140px;
+   width: 700px;
+   font-size: 25px;
    font-family: 'Roboto', sans-serif;
    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
    text-align: center;
@@ -59,18 +61,67 @@ html, body {
 .funfactstwo {
     padding-bottom: 100px;
 }
+
+.churchPicture {
+    position: relative;
+    /* left: 780px;
+    bottom: 80px; */
+    transform: translate(780px, -80px);
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+    height: 250px;
+    width: 400px;
+}
+.projectstextinPar {
+    
+    color: gray;
+
+}
+
+.websiteMark {
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.imagePlaceholder {
+    position: absolute;
+    transform: translate(-490px, 130px);
+    width: 400px;        
+    height: 250px;        
+    background-color: gray;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.tLogo {
+    position: absolute;
+    z-index: 5;
+    height: 150px;
+    transform: translate(-185px, 100px);
+    
+}
+
+
 .mainProfile {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+
+.bar {
+    background: black !important;
+}
+
+
 @media (max-width:600px) {
 
-    .profileParagraph {
+    .profileParagraph, .factsPar {
     position: relative;
-    top: 100px;
-    width: 300px;
+    top: 130px;
+    width: 400px;
     font-size: 24px;
     }
 
@@ -83,6 +134,9 @@ html, body {
     top: 100px;
 
 
+}
+.tLogo {
+    transform: translate(-255px, 100px);
 }
   
 }
