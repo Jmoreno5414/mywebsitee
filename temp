@@ -1,0 +1,41 @@
+<div class="mainProfile">
+    
+    <image src="juanm.png" class="profilePic">
+    </image>
+    <div>
+        <h1 class="recText">To the recruiters</h1>
+        <p class="profileParagraph">
+            placeholder <a href="projects.html" class="projectstextinPar">projects</a>.
+        </p>
+        <div class="innerLogos">
+            <image src="robloxStudiologo.png" class="studioLogo"></image>
+            <image src="mercyUni.jpg" class="mercyLogo"></image>
+        </div>
+    </div>
+    <image src="codeLogos.png" class="codeLogos"></image>
+
+
+    <div class="funFacts">
+        <h1 class="recText">More about me</h1>
+        <div class="funfactsOne">
+
+            <div class="imagePlaceholder"></div>
+            <p class="factsPar">
+           placeholder
+            </p> 
+
+        </div>
+
+
+        <div class="funfactstwo">
+            
+            <p class="factsPar">
+           placeholder
+            </p> 
+            <image src="meChurch.png" class="churchPicture"></image>
+        </div>
+
+        <image src="tLogos.png" class="tLogo"></image>
+
+    
+</div>

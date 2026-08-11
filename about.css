@@ -1,8 +1,6 @@
 html, body {
     margin: 0;
     height: 100%;
-
-
 }
 
 @font-face {
@@ -14,68 +12,181 @@ html, body {
   font-display: swap;
 }
 
+.mainProfile {
+    position: relative; 
+    width: 100%;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
 .profilePic {
-    position: relative;
     width: 300px;
     height: 300px;
     background: gray;
     border-radius: 90px;
-    top: 100px;
-    
-
-
+    margin-top: 40px; 
 }
 
-.innerLogos {
+.recText {
+    margin-top: 40px; 
+    text-align: center;
+    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic Bold', sans-serif;
+}
+
+.profileParagraph {
+   width: 100%;
+   max-width: 700px;
+   font-size: 25px;
+   font-family: 'Roboto', sans-serif;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+   text-align: center;
+   margin-top: 20px; 
+}
+.profileSect {
+    animation: slide-from-top 1s ease-in forwards;
+}
+
+@keyframes slide-from-top {
+    from {transform: translateY(-30%); opacity: 0;}
+    to {transform: translateY(0%);
+    opacity: 1;}
+}
+
+
+
+.topprofileBox {
+    animation: ease-from 1.54s ease-in forwards;
+}
+
+@keyframes ease-from {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes slide-from-right {
+    from {transform: translateX(30%); opacity: 0;}
+    to {transform: translate(0%); opacity: 1;}
+}
+
+/* .backImage {
+    animation: fade 5s ease-in;
+    
+}
+
+@keyframes fade {
+    from {opacity: 0.2; }
+    to {opacity: 1;}
+} */
+
+
+.topprofileBox {
     position: relative;
-    transform: translate(800px, -120px);
-    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 75px;
 }
 
-.studioLogo {
-    transform: translate(30px, 150px);
-    z-index: 2;
-    
+
+.pcLogo1, .pcLogo2 {
+    height: 120px;
+    padding: 25px;
+    z-index: 6;
 }
+.pcLogo1 {
+    margin-top: 70px;
+
+}
+.pcLogo2 {
+    margin-bottom: 130px;
+}
+
+.innerLogosMobile {
+    display: none;
+}
+
+
+
 .mercyLogo {
-    z-index: 3;
-    transform: translate(-1100px, -20px);
+    height: 120px;
+    width: auto;
+}
+.studioLogo {
+    height: 100px;
+    width: auto;
+    margin-top: 8px;
 }
 
-.mercyLogo, .studioLogo {
+.codeLogos {
+    animation: slide-from-left 1s ease-in;
+}
+
+@keyframes slide-from-left {
+    from {transform: translate(-40%);
+    opacity: 0;
+    }
+    to {transform: translate(0%);
+    opacity: 1;
+    }
+}
+
+
+.codeLogos {
+    width: 340px;
+    height: 220px;
+}
+
+
+.funFacts {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 120px;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
 }
 
-.profileParagraph, .factsPar   {
-   position: relative;
-   top: 140px;
-   width: 700px;
+.funfactsOne, .funfactstwo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+.factsPar {
+   width: 100%;
+   max-width: 500px;
    font-size: 25px;
    font-family: 'Roboto', sans-serif;
    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
    text-align: center;
 }
-.funfactstwo {
-    padding-bottom: 100px;
+
+.imagePlaceholder {
+    width: 400px;        
+    height: 250px;        
+    background-color: gray;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0; 
 }
 
 .churchPicture {
-    position: relative;
-    /* left: 780px;
-    bottom: 80px; */
-    transform: translate(780px, -80px);
     border-radius: 40px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
     height: 250px;
     width: 400px;
+    flex-shrink: 0;
 }
-.projectstextinPar {
-    
-    color: gray;
 
+.projectstextinPar {
+    color: gray;
 }
 
 .websiteMark {
@@ -85,75 +196,68 @@ html, body {
     padding-bottom: 10px;
     font-size: 15px;
 }
-.imagePlaceholder {
-    position: absolute;
-    transform: translate(-490px, 130px);
-    width: 400px;        
-    height: 250px;        
-    background-color: gray;
-    border-radius: 40px;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
-}
-
-.tLogo {
-    position: absolute;
-    z-index: 5;
-    height: 150px;
-    transform: translate(-185px, 100px);
-    
-}
-
-
-.mainProfile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 
 .bar {
     background: black !important;
 }
 
+.defText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+.pictureText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px
 
-@media (max-width:600px) {
+}
 
+@media (max-width: 768px) {
+    .funfactsOne, .funfactstwo {
+        flex-direction: column; 
+    }
+    .innerLogosMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    z-index: 4;
+    }
+
+    .innerLogosMobile {
+        animation: slide-from-right 1s ease-in;
+    }
+
+    .topprofileBox {
+        margin-right: 0px;
+    }
+    .pcLogo1, .pcLogo2 {
+        display: none;
+    }
+    
     .profileParagraph, .factsPar {
-    position: relative;
-    top: 130px;
-    width: 400px;
-    font-size: 24px;
+        font-size: 22px;
+        max-width: 90%;
     }
 
     .profilePic {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background: gray;
-    border-radius: 70px;
-    top: 100px;
-
-
+        width: 200px;
+        height: 200px;
+        border-radius: 70px;
+    }
+    
+    .imagePlaceholder, .churchPicture {
+        width: 100%;
+        max-width: 340px;
+        height: 210px;
+    }
 }
+
 .tLogo {
-    transform: translate(-255px, 100px);
-}
-  
-}
-
-
-.codeLogos {
-    position:relative;
-    display: flex;
-    justify-content: center;
-    top: 130px;
-    align-items: center;
-    width: 340px;
-    height: 220px;
-}
-
-.recText {
-    position: relative;
-    top: 150px;
-    text-align: center;
+height: 20%;
+width: 20%;
 }
