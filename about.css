@@ -42,7 +42,7 @@ html, body {
    width: 100%;
    max-width: 700px;
    font-size: 25px;
-   font-family: 'Roboto', sans-serif;
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
    text-align: center;
    margin-top: 20px; 
@@ -177,7 +177,7 @@ html, body {
    width: 100%;
    max-width: 500px;
    font-size: 25px;
-   font-family: 'Roboto', sans-serif;
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
    text-align: center;
 }

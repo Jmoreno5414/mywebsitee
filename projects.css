@@ -92,7 +92,7 @@ html, body {
         flex-direction: column;
     }
     .images1, .images2, .images3 {
-        height: 250px;
+        height: 230px;
     }
     .rightBlock {
         padding-left: 0px;

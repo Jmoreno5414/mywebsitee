@@ -7,7 +7,7 @@ html, body {
 .cTitle {
     display: flex;
     justify-content: center;
-    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic Bold', sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     max-width: 600px;
     margin: 20px auto;
     text-align: center;
@@ -27,7 +27,7 @@ html, body {
     display: flex;
     justify-content: center;
     gap:50px;
-    margin-top: 200px;
+    margin-top: 100px;
     animation: 1s come-from-left ease-in;
 }
 @keyframes come-from-left {
@@ -45,7 +45,7 @@ html, body {
 
 @media (max-width: 728px) {
     .logos {
-        width: 60px;
+        width: 50px;
         height: auto;
     }
 }
