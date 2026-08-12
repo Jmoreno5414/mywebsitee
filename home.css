@@ -4,7 +4,7 @@ body {
     background-color: rgb(0, 12, 38);
 }
 .backImage {
-    animation: fade 5s ease-in;
+    animation: fade 5s ease-in forwards;
     
 }
 
@@ -21,14 +21,14 @@ body {
 
 
 
-.Heading h1 {
+.nameHead {
     font-weight: bolder;
     font-size: 410%;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
    
 }
 .Heading h2 {
-    font-size: 120%;
+    font-size: 110%;
     
 }
 
@@ -116,4 +116,21 @@ text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     object-fit: cover;
    
 
+}
+.credit {
+    animation: fade 1s ease-in;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: white;
+    margin-top: -25px;
+    z-index: 10;
+}
+
+
+@media (max-width: 768px) { 
+    .nameHead {
+        font-size: 310%;
+    }
 }

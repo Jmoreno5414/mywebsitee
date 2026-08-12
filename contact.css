@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    height: 100%;
+   overflow: hidden;
+  }
+
+.cTitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic Bold', sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* .contactBox {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 170px;
+    gap: 40px;
+    font-family: 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic Bold', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: rgb(0, 12, 38, 0.8);
+    border-radius: 55px;
+
+} */
+
+.logosRow {
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-top: 200px;
+}
+
+.logos {
+ width: 140px;  /* Force a small size */
+  height: auto; 
+
+}
+@media (max-width: 728px) {
+    .logos {
+        width: 60px;
+        height: auto;
+    }
+}

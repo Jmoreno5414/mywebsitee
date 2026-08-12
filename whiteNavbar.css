@@ -20,7 +20,7 @@ html, body {
 }
 
 .header {
-    animation: dropDown 1s ease-out forwards;
+    animation: dropDown 0.5s ease-out forwards;
 }
 
 @keyframes dropDown {
@@ -135,6 +135,9 @@ color:gray !important;
     text-decoration: none;
 }
 
+.bar {
+    background: black !important;
+}
 
 
 .navBar a {
