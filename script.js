@@ -43,3 +43,45 @@ runSequence();
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const images1 = document.querySelector(".images1");
+  const button1 = document.querySelector(".button1");
+  const images2 = document.querySelector(".images2");
+  const button2 = document.querySelector(".button2");
+  const images3 = document.querySelector(".images3");
+  const button3 = document.querySelector(".button3");
+
+  const imagescycle1 = ["./keysproject/1.png", "./keysproject/2.png", "./keysproject/3.png", "./keysproject/4.png", "./keysproject/5.png"];
+  let index1 = 0;
+
+  const imagescycle2 = ["./movieappproject/1.png", "./movieappproject/2.png", "./movieappproject/3.png", "./movieappproject/4.png", "./movieappproject/5.png", "./movieappproject/6.png"];
+  let index2 = 0;
+
+  const imagescycle3 = ["./pokeappproject/1.png", "./pokeappproject/2.png", "./pokeappproject/3.png"];
+  let index3 = 0;
+
+  if (button1 && images1) {
+    button1.addEventListener('click', () => {
+      index1++;
+      if (index1 >= imagescycle1.length) index1 = 0;
+      images1.src = imagescycle1[index1];
+    });
+  }
+
+  if (button2 && images2) {
+    button2.addEventListener('click', () => {
+      index2++;
+      if (index2 >= imagescycle2.length) index2 = 0;
+      images2.src = imagescycle2[index2];
+    });
+  }
+
+  if (button3 && images3) {
+    button3.addEventListener('click', () => {
+      index3++;
+      if (index3 >= imagescycle3.length) index3 = 0;
+      images3.src = imagescycle3[index3];
+    });
+  }
+});
+

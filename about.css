@@ -203,14 +203,6 @@ html, body {
     color: gray;
 }
 
-.websiteMark {
-    display: flex;
-    justify-content: center;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    font-size: 15px;
-}
-
 
 .defText {
     font-family: 'Roboto', sans-serif;
@@ -274,3 +266,6 @@ html, body {
     animation: ease-from 1s ease-in;
 }
 
+.credit {
+    padding-bottom: 15px;
+}

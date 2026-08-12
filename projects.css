@@ -13,10 +13,101 @@ html, body {
     
 }
 
-.keysheetsFrame  > * ,.pokemonProject > *, .churchPlaceholder > *, .movieProject > *{
+.keysheetsFrame  > * ,.pokemonProject > *, .churchPlaceholder > *, .movieFrame > *, .horrorGame > *, .trainSystem > *{
     margin: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
+.images1, .images2, .images3 {
+    height: 400px;
+    border: 5px solid rgb(128, 128, 128, 0.2);
+
+    border-radius: 25px;
+}
+
+.rightTitle {
+    text-align: center;
+    padding: 15px;
+}
+
+.rightTitle > * {
+    margin: 0;
+
+}
+
+.mainTitle {
+    margin-top:35px;
+}
+.mainTitle {
+    animation: 1s fall-down ease-in;
+}
+
+@keyframes fall-down {
+    from {transform: translateY(-150%); opacity: 0;}
+    to {transform:translateY(0%); opacity: 1;}
+}
+
+.leftBlock {
+    animation: 1s come-from-left ease-in;
+}
+@keyframes come-from-left {
+    from {transform: translateX(-40%); opacity: 0;}
+    to {transform:translateX(0%); opacity: 1;}
+}
+.rightBlock {
+    animation: 1s come-from-right ease-in;
+}
+@keyframes come-from-right {
+    from {transform: translateX(40%); opacity: 0;}
+    to {transform:translateX(0%); opacity: 1;}
+}
+
+
+.button1, .button2, .button3 {
+    margin-top: 15px;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 15px;
+    color: black;
+
+}
+
+.keysheetsFrame, .movieFrame, .pokemonProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.rightBlock {
+    max-width: 350px;
+    padding-left: 45px;
+}
+
+@media (max-width: 800px) {
+    .keysheetsFrame, .movieFrame, .pokemonProject {
+        flex-direction: column;
+    }
+    .images1, .images2, .images3 {
+        height: 250px;
+    }
+    .rightBlock {
+        padding-left: 0px;
+    }
+}
+
+
+/* 
+"keysheetsFrame">
+        <div class="leftBlock">
+            <image src="./keysproject/1.png" class="images1"></image>
+            <div class="leftText">
+                <h2>Keysheets</h2>
+                <h3>Xcode</h3>
+            </div>
+        </div>
+
+        <p class="rightBlock"> */
