@@ -251,6 +251,7 @@ html, body {
         width: 200px;
         height: 200px;
         border-radius: 70px;
+        margin-left: 60px;
     }
     
     .imagePlaceholder, .churchPicture {
