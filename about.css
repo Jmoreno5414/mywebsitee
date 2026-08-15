@@ -30,6 +30,8 @@ html, body {
     border-radius: 90px;
     margin-top: 40px; 
     margin-left: 25px;
+
+    border: 5px solid rgb(128, 128, 128, 0.2);
 }
 
 .recText {
@@ -188,7 +190,7 @@ html, body {
     background-color: gray;
     border-radius: 40px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
-    flex-shrink: 0; 
+    border: 5px solid rgb(128, 128, 128, 0.2);
 }
 
 .churchPicture {
@@ -196,7 +198,7 @@ html, body {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
     height: 250px;
     width: 400px;
-    flex-shrink: 0;
+    border: 5px solid rgb(128, 128, 128, 0.2);
 }
 
 .projectstextinPar {
