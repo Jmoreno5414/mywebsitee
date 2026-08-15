@@ -65,8 +65,23 @@ html, body {
     to {transform:translateX(0%); opacity: 1;}
 }
 
+.rB, .rB2 {
+    animation: come-from-right 2s ease-in;
+    animation-fill-mode: both; 
+    animation-timeline: view();
+    animation-range: entry -500% contain 50%;
+}
 
-.button1, .button2, .button3 {
+
+
+.lB, .lB2 {
+    animation: come-from-left 2s ease-in;
+    animation-fill-mode: both; 
+    animation-timeline: view();
+    animation-range: entry -500% contain 50%;
+}
+
+.button1, .button2, .button3, .button4, .button5 {
     margin-top: 15px;
     text-decoration: none;
     line-height: 25px;
@@ -88,10 +103,10 @@ html, body {
 }
 
 @media (max-width: 800px) {
-    .keysheetsFrame, .movieFrame, .pokemonProject, .horrorGame {
+    .keysheetsFrame, .movieFrame, .pokemonProject, .horrorGame, .trainSystem {
         flex-direction: column;
     }
-    .images1, .images2, .images3 {
+    .images1, .images2, .images3, .images4, .images5 {
         height: 230px;
     }
     .rightBlock {
@@ -100,8 +115,8 @@ html, body {
 }
 
 .credit {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 0px;
     
 }
 /* 
