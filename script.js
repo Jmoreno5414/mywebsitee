@@ -6,6 +6,17 @@ function toggleMenu(){
     icon.classList.toggle("active")
 }
 
+function toggleZoom(image) {
+  image.classList.toggle('zoomed');
+
+  // if (image.classList.contains('zoomed')) {
+  //   document.body.style.overflow = 'hidden';
+  // } else {
+  //   document.body.style.overflow = '';
+  // }
+
+}
+
 const text = ">Aspiring Software Engineer.";
 const text2 = ">Juan D. Moreno"
 const text3 = ">Front-end Developer | Junior @Mercy University"

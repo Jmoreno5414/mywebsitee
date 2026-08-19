@@ -184,14 +184,29 @@ html, body {
    text-align: center;
 }
 
-.imagePlaceholder {
+.imagePlaceholder, .churchPicture {
     width: 400px;        
     height: 250px;        
     background-color: gray;
     border-radius: 40px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
     border: 5px solid rgb(128, 128, 128, 0.2);
+    transition: transform 0.3s ease;
+    /* cursor: zoom-in; */
 }
+/* .imagePlaceholder.zoomed, .churchPicture.zoomed {
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+  cursor: zoom-out; 
+  z-index: 1000; 
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+} */
 
 .churchPicture {
     border-radius: 40px;
