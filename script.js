@@ -66,19 +66,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const button5 = document.querySelector(".button5");
   const images5 = document.querySelector(".images5");
 
-  const imagescycle1 = ["./keysproject/1.png", "./keysproject/2.png", "./keysproject/3.png", "./keysproject/4.png", "./keysproject/5.png"];
+  const imagescycle1 = ["../keysproject/1.png", "../keysproject/2.png", "../keysproject/3.png", "../keysproject/4.png", "../keysproject/5.png"];
   let index1 = 0;
 
-  const imagescycle2 = ["./movieappproject/1.png", "./movieappproject/2.png", "./movieappproject/3.png", "./movieappproject/4.png", "./movieappproject/5.png", "./movieappproject/6.png"];
+  const imagescycle2 = ["../movieappproject/1.png", "../movieappproject/2.png", "../movieappproject/3.png", "../movieappproject/4.png", "../movieappproject/5.png", "../movieappproject/6.png"];
   let index2 = 0;
 
-  const imagescycle3 = ["./pokeappproject/1.png", "./pokeappproject/2.png", "./pokeappproject/3.png"];
+  const imagescycle3 = ["../pokeappproject/1.png", "../pokeappproject/2.png", "../pokeappproject/3.png"];
   let index3 = 0;
 
-  const imagescycle4 = ["./horrorGamepics/1.png", "./horrorGamepics/2.png", "./horrorGamepics/3.png"];
+  const imagescycle4 = ["../horrorGamepics/1.png", "../horrorGamepics/2.png", "../horrorGamepics/3.png"];
   let index4 = 0;
 
-    const imagescycle5 = ["./trainSystempics/1.png", "./trainSystempics/2.png"];
+    const imagescycle5 = ["../trainSystempics/1.png", "../trainSystempics/2.png"];
   let index5 = 0;
 
   if (button1 && images1) {
