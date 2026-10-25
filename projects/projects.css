@@ -1,3 +1,5 @@
+@import url('https://googleapis.com');
+
 html, body {
     margin: 0;
     height: 100%;
@@ -40,6 +42,9 @@ html, body {
 
 .mainTitle {
     margin-top:35px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 .mainTitle {
     animation: 1s fall-down ease-in;
@@ -87,6 +92,8 @@ html, body {
     line-height: 25px;
     font-size: 15px;
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    
 
 }
 
@@ -102,12 +109,21 @@ html, body {
     padding-left: 45px;
 }
 
+.projdesc {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.butt {
+    border-radius: 10px;
+}
+
 @media (max-width: 800px) {
     .keysheetsFrame, .movieFrame, .pokemonProject, .horrorGame, .trainSystem {
         flex-direction: column;
     }
     .images1, .images2, .images3, .images4, .images5 {
-        height: 230px;
+        height: 190px;
     }
     .rightBlock {
         padding-left: 0px;
